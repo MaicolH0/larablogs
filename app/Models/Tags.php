@@ -13,4 +13,8 @@ class Tags extends Model
         'name',
         'description',
     ];
+
+    public function posts(){
+        return $this->hasMany('App\Models\Post');
+    }
 }
